@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* Navbar */
+nav {
+  text-align: center;
+  padding: 20px;
+}
+nav ul {
+  position: fixed; 
+  top: 40px;
+  left: 700px;   
+  list-style: none;
+  display: inline-flex;
+  gap: 50px;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
+nav ul li a b {
+   float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #00bfff;
+  padding: 40px;
+}
+/* Layout */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+}
+ 
+.right-container {
+  float: left;
+  background: #c20d0d;
+  width: 70%;
+}
+
+.text h3 {
+  font-size: 28px;
+}
+.text h3 span {
+  color: #00bfff;
+}
+.text h1 {
+  font-size: 36px;
+  color: #00bfff;
+  max-width: 500px;
+}
+.text p {
+  width: 450px;
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 50px;
+}
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 15px;
+  font-weight: bold;
+}
+button.hire {
+  background: #00bfff;
+  color: #000;
+}
+button.project {
+  background: transparent;
+  border: 2px solid #00bfff;
+  color: #00bfff;
+}
+
+/* Social icons */
+.social {
+  position: fixed;         /* keeps icons fixed on screen */
+  top: 320px;               /* distance from top */
+  left: 165px;  
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.social a {
+  color: #ccc;
+  font-size: 26px;
+  transition: 0.3s;
+}
+.social a:hover {
+  color: #00bfff;
+}
+
+/* Blue glowing shape */
+.circle-bg {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,191,255,0.5) 0%, rgba(219, 33, 33, 0) 200%);
+  box-shadow: 0 0 50px 20px rgba(0,191,255,0.4);
+  z-index: 1;
+  filter: blur(30px);
+}
+
+/* Profile Image with Glow */
+.circle {
+  border-radius: 50%;   
+  padding: 40px;
+  border: 3px solid #00bfff;
+  box-shadow: 0 0 40px #00bfff;
+}
+.circle img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}

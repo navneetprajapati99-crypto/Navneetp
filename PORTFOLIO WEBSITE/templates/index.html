@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navneet Prajapati | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">WORK</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">PROJECT</a></li>
+      <li><a href="#">SERVICE</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Left Section -->
+    <div class="text">
+      <h3>Hello, I am <span>Navneet Prajapati</span></h3>
+      <h1>Industrial Automation Engineer & Web Developer.</h1>
+      <p>
+        I specialize in industrial automation systems and modern web development.  
+        Passionate about integrating technology with innovation to build smart solutions.
+      </p>
+
+      <div class="buttons">
+        <button class="hire">Hire Me Now</button>
+        <button class="download">Download CV</button>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social">
+        <a href="https://wa.me/919727328077" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/NAprajapati" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/navneet-prajapati-012485135" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/BeingNavneetOza" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/_the.navneet_"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  
+    <!-- Right Section (Profile Image) -->
+    <div class="image">
+      <div class="circle">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Prajapati">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
